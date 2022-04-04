@@ -34,13 +34,8 @@ menu:
     - identifier: github
       name: GitHub
       pre: <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
-      url: https://github.com/kakawait
+      url: https://github.com/samshott
       weight: 1
-    - identifier: stackoverflow
-      name: Stack Overflow
-      pre: <i class="sidebar-button-icon fab fa-lg fa-stack-overflow" aria-hidden="true"></i>
-      url: https://stackoverflow.com/users/636472/kakawait
-      weight: 2
   main:
     - identifier: home
       name: Home
@@ -67,12 +62,6 @@ menu:
       pre: <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
       url: /#about
       weight: 5
-  misc:
-    - identifier: rss
-      name: RSS
-      pre: <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
-      url: /index.xml
-      weight: 1
 params:
   autoThumbnailImage: yes
   clearReading: yes
