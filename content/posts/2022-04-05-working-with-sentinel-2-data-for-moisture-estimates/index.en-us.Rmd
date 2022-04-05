@@ -207,3 +207,9 @@ raster::writeRaster(cummulative_moisture,
                     filename = fileName, #writes to the working directory
                     formate = writeFormats()[24]) #Geotiff indice from formats list
 ```
+
+# Still to come in Part 2...
+
+-   **Create H3 tiles in AOI**
+
+-   **Extract Raster Data to Vector**
