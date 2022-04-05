@@ -1,12 +1,3 @@
-{{ if $.Site.Params.dateFormat }}
-  {{ $date := (.Date.Format $.Site.Params.dateFormat) }}
-  {{ $regex := "(?i)(january|february|march|april|may|june|july|august|september|october|november|december)" }}
-  {{ $month := findRE $regex $date }}
-  {{ if eq (len $month) 1 }}
-    {{ replaceRE $regex (i18n (lower (printf "date.month.%s" (index $month 0)))) $date }}
-  {{ else }}
-    {{ .Date.Format $.Site.Params.dateFormat }}
-  {{ end }}
-{{ else }}
-  {{ i18n (lower (printf "date.month.%s" .Date.Month)) }} {{ .Date.Day }}, {{ .Date.Year }}
-{{ end }}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2a2cfd88af7c4f6f7ba6e7e8714d7657eaa19a3b6f1f517eecbbad7ada31e6a6
+size 545

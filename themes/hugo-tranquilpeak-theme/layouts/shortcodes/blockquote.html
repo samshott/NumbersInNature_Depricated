@@ -1,15 +1,3 @@
-<blockquote>
-  <p>{{ .Inner }}</p>
-  <footer>
-    <strong>{{ .Get 0 }}</strong>
-    {{ if ge (len .Params) 3 }}
-      <cite><a href="{{ .Get 1 }}" target="_blank" rel="external">{{ .Get 2 }}</a></cite>
-    {{ else }}
-      {{ if (findRE "https?://" (.Get 1)) }}
-        <cite><a href="{{ .Get 1 }}" target="_blank" rel="external">{{ .Get 1 }}</a></cite>
-      {{ else }}
-        <cite>{{ .Get 1 }}</cite>
-      {{ end }}
-    {{ end }}
-  </footer>
-</blockquote>
+version https://git-lfs.github.com/spec/v1
+oid sha256:43a0d67a0c6adef7d3becac711704feb62440ced98280e134beeec7d7e6c7792
+size 460
