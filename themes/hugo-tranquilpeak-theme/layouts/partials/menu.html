@@ -1,13 +1,3 @@
-{{ range .menu }}
-  <li class="sidebar-button">
-    {{ if and (or (in .URL "://") (in .URL "mailto:") (in .URL "tel:") (in .URL "callto:") (in .URL "skype:")) (not (and $.root.Site.BaseURL (in .URL (printf "%s" $.root.Site.BaseURL)))) }}
-      <a class="sidebar-button-link {{ if eq .Identifier "search" }}open-algolia-search{{ end }}" href="{{ .URL | safeURL }}" target="_blank" rel="noopener" title="{{ .Name }}">
-    {{ else }}
-      <a class="sidebar-button-link {{ if eq .Identifier "search" }}open-algolia-search{{ end }}" href="{{ .URL | relLangURL }}" title="{{ .Name }}">
-    {{ end }}
-      {{ .Pre }}
-      {{ $name := (i18n (printf "global.%s" .Identifier)) }}
-      <span class="sidebar-button-desc">{{ if eq (len $name) 0 }}{{ .Name }}{{ else }}{{ $name }}{{ end }}</span>
-    </a>
-  </li>
-{{ end }}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ddfde76a675abe1a62009af27f7c03086f95300f5665c53565c5f6ba365752f
+size 814

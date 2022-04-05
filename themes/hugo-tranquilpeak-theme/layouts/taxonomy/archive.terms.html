@@ -1,18 +1,3 @@
-{{ partial "head.html" . }}
-  <body>
-    <div id="blog">
-      {{ partial "header.html" . }}
-      {{ partial "sidebar.html" . }}
-      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
-        class="{{ with .Params.coverImage }}hasCover{{ end }}
-               {{ if eq .Params.coverMeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
-               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
-        <div id="archives" class="main-content-wrap">
-          <form id="filter-form" action="#">
-            <input name="date" type="text" class="form-control input--xlarge" placeholder="{{ i18n "global.search_date" }}" autofocus="autofocus">
-          </form>
-          {{ partial "archive-post.html" (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
-        </div>
-      </div>
-    </div>
-{{ partial "foot.html" . }}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a159670fc996c3cb07109ad18b7fdeebb9aa8bc5bed709d0ef0a8e49b125d7cc
+size 877

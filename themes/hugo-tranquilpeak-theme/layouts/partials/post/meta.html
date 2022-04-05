@@ -1,10 +1,3 @@
-{{ if not (eq .Params.showMeta false) }}
-  <div class="postShorten-meta post-meta">
-    {{ if not (eq .Params.showDate false)  }}
-      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-        {{ partial "internal/date.html" . }}
-      </time>
-    {{ end }}
-    {{ partial "post/category.html" . }}
-  </div>
-{{ end }}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d62bb7ffae5e22e9522399aa684e118592642930e3e7d05f3c5f27a80373e9a1
+size 333
